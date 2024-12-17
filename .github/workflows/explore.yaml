@@ -1,0 +1,19 @@
+name: Explore
+op: [push]
+jobs:
+  job1:
+    name: Job1
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Step1
+        uses: actions/checkout@v4
+      - name: Step2
+        run: env
+  job2:
+    name: job2
+    runs-on: macos-latest
+    steps:
+      - name: job2_step1
+        uses: actions/checkout@v4
+      - name: job2_step2
+        run: env | sort
