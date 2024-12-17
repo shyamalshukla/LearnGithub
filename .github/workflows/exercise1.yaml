@@ -1,0 +1,28 @@
+name: Print Dates
+on: push
+jobs:
+  job1:
+    name: job1b
+    runs-on: ubuntu-latest
+    steps:
+      - name: step
+        run: date
+  job2:
+    name: job2
+    runs-on: macos-latest
+    steps:
+      - name: step
+        run: date
+  job3:
+    name: job3
+    runs-on: windows-latest
+    steps:
+      - name: step
+        run: Get-Date
+  job4:
+    needs: [job1, job2, job3]
+    name: job4
+    runs-on: ubuntu-latest
+    steps:
+      - name: step
+        run: date
