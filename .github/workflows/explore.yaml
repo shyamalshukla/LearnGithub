@@ -1,5 +1,5 @@
 name: Explore
-op: [push]
+on: [push]
 jobs:
   job1:
     name: Job1
