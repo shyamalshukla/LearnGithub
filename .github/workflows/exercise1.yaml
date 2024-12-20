@@ -27,4 +27,4 @@ jobs:
       - name: step
         run: date
       - name: step2
-        run: echo ${{GITHUB_ACTOR}}
+        run: echo $GITHUB_ACTOR
